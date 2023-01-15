@@ -1,5 +1,3 @@
-#![feature(never_type)]
-
 use anyhow::{Result, Context};
 use crc16::MODBUS;
 use paho_mqtt::{Client, Message};
@@ -169,7 +167,7 @@ impl SunriseError {
     }
 }
 
-fn main() -> Result<!> {
+fn main() -> Result<()> {
     let port_name = serialport::available_ports()
         .expect("listing ports")
         .into_iter()
