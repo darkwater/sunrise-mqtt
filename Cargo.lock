@@ -414,7 +414,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "sunrise"
+name = "sunrise-mqtt"
 version = "0.1.0"
 dependencies = [
  "anyhow",
